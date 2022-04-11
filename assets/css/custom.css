@@ -96,6 +96,15 @@
 .sidebar .sidebar-brand-wrapper .sidebar-brand span{
     color: var(--orange-color)
 }
+.sidebar .nav {
+    margin-bottom: 15px;
+    padding-top: 60px;
+}
+.sidebar .nav:last-of-type {
+    margin-bottom: 15px;
+    padding-top: 0;
+    border-top: 1px solid #283a8b;
+}
 .sidebar .nav .nav-item.profile .profile-desc .profile-name h5 {
     color: #fff;
     font-weight: 500;
@@ -147,7 +156,7 @@
     padding: 0;
 }
 .sidebar .nav .nav-item.nav-category .nav-link {
-    color: #fbfbff;
+    color: #ececec;
 }
 .sidebar .nav .nav-item .nav-link i.menu-arrow {
     color: var(--orange-color);
