@@ -18,8 +18,8 @@
     <!-- Layout styles -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
     <style>
         body{
             background-color: transparent;
@@ -151,7 +151,7 @@
 
           <!-- Students -->
           <li class="nav-item menu-items">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="./views/students/students.html">
               <!-- Icon -->
               <span class="menu-icon">
                 <i class="fas fa-user-graduate"></i>
@@ -246,6 +246,69 @@
             </ul> -->
             <!-- End of Form -->
             <ul class="navbar-nav navbar-nav-right">
+
+              <!-- Add Items -->
+              <li class="nav-item dropdown">
+                <a class="nav-link btn crayons-btn" id="profileDropdown" href="#" data-toggle="dropdown">
+                  <!-- Icon -->
+                  <div class="icon d-inline-block">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                  <span class="d-inline-block">Add</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                  <div class="dropdown-divider"></div>
+                  <!-- Administrator -->
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="fas fa-users-cog text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Administrator</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <!-- Professor -->
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="fas fa-users text-warning"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Professor</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <!-- Assistant -->
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="fas fa-users text-primary"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Assistant</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <!-- Student -->
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="fas fa-user-graduate text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Student</p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <!-- End of Add Items -->
+
               <!-- Notification -->
               <li class="nav-item dropdown">
                 <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
@@ -432,8 +495,8 @@
                   <!-- Card -->
                   <div class="card">
                     <!-- Card Body -->
-                    <div class="card-body">
-                      <div class="row">
+                    <div class="card-body text-center">
+                      <div class="row mb-2">
                         <div class="col-9">
                           <div class="d-flex align-items-center align-self-start">
                             <h3 class="mb-0">200</h3>
@@ -445,71 +508,112 @@
                           </div>
                         </div>
                       </div>
-                      <h6 class="mb-0 font-weight-normal">Students registered</h6>
+                      <div class="row">
+                        <div class="col-12">
+                          <!-- <a class="text-white d-block mb-0 font-weight-normal">Students registered</a> -->
+                          <h6 class="mb-0 font-weight-normal">Students registered</h6>
+                        </div>
+                      </div>
                     </div>
                     <!-- End of Card Body -->
+                    <!-- <div class="card-footer py-1 px-0">
+                      <a class="d-block" href="">Show More</a>
+                    </div> -->
                   </div>
                   <!-- Card -->
                 </div>
                 <div class="col-xl-3 col-md-3 col-sm-6 grid-margin stretch-card">
+                  <!-- Card -->
                   <div class="card">
-                    <div class="card-body">
-                      <div class="row">
+                    <!-- Card Body -->
+                    <div class="card-body text-center">
+                      <div class="row mb-2">
                         <div class="col-9">
                           <div class="d-flex align-items-center align-self-start">
-                            <h3 class="mb-0">$17.34</h3>
-                            <p class="text-success ml-2 mb-0 font-weight-medium">+11%</p>
-                          </div>
-                        </div>
-                        <div class="col-3">
-                          <div class="icon icon-box-success">
-                            <span class="mdi mdi-arrow-top-right icon-item"></span>
-                          </div>
-                        </div>
-                      </div>
-                      <h6 class="text-muted font-weight-normal">Revenue current</h6>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-md-3 col-sm-6 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-9">
-                          <div class="d-flex align-items-center align-self-start">
-                            <h3 class="mb-0">$12.34</h3>
-                            <p class="text-danger ml-2 mb-0 font-weight-medium">-2.4%</p>
-                          </div>
-                        </div>
-                        <div class="col-3">
-                          <div class="icon icon-box-danger">
-                            <span class="mdi mdi-arrow-bottom-left icon-item"></span>
-                          </div>
-                        </div>
-                      </div>
-                      <h6 class="text-muted font-weight-normal">Daily Income</h6>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-3 col-md-3 col-sm-6 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <div class="row">
-                        <div class="col-9">
-                          <div class="d-flex align-items-center align-self-start">
-                            <h3 class="mb-0">$31.53</h3>
-                            <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
+                            <h3 class="mb-0">200</h3>
                           </div>
                         </div>
                         <div class="col-3">
                           <div class="icon icon-box-success ">
-                            <span class="mdi mdi-arrow-top-right icon-item"></span>
+                            <span class="fas fa-user-graduate icon-item"></span>
                           </div>
                         </div>
                       </div>
-                      <h6 class="text-muted font-weight-normal">Expense current</h6>
+                      <div class="row">
+                        <div class="col-12">
+                          <!-- <a class="text-white d-block mb-0 font-weight-normal">Students registered</a> -->
+                          <h6 class="mb-0 font-weight-normal">Students registered</h6>
+                        </div>
+                      </div>
                     </div>
+                    <!-- End of Card Body -->
+                    <!-- <div class="card-footer py-1 px-0">
+                      <a class="d-block" href="">Show More</a>
+                    </div> -->
                   </div>
+                  <!-- Card -->
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-6 grid-margin stretch-card">
+                  <!-- Card -->
+                  <div class="card">
+                    <!-- Card Body -->
+                    <div class="card-body text-center">
+                      <div class="row mb-2">
+                        <div class="col-9">
+                          <div class="d-flex align-items-center align-self-start">
+                            <h3 class="mb-0">200</h3>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="icon icon-box-success ">
+                            <span class="fas fa-user-graduate icon-item"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <!-- <a class="text-white d-block mb-0 font-weight-normal">Students registered</a> -->
+                          <h6 class="mb-0 font-weight-normal">Students registered</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Card Body -->
+                    <!-- <div class="card-footer py-1 px-0">
+                      <a class="d-block" href="">Show More</a>
+                    </div> -->
+                  </div>
+                  <!-- Card -->
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-6 grid-margin stretch-card">
+                  <!-- Card -->
+                  <div class="card">
+                    <!-- Card Body -->
+                    <div class="card-body text-center">
+                      <div class="row mb-2">
+                        <div class="col-9">
+                          <div class="d-flex align-items-center align-self-start">
+                            <h3 class="mb-0">200</h3>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="icon icon-box-success ">
+                            <span class="fas fa-user-graduate icon-item"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <!-- <a class="text-white d-block mb-0 font-weight-normal">Students registered</a> -->
+                          <h6 class="mb-0 font-weight-normal">Students registered</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End of Card Body -->
+                    <!-- <div class="card-footer py-1 px-0">
+                      <a class="d-block" href="">Show More</a>
+                    </div> -->
+                  </div>
+                  <!-- Card -->
                 </div>
               </div>
               <!-- End of Status -->
