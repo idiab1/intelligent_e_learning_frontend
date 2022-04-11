@@ -98,7 +98,7 @@
             <a class="nav-link" href="">
               <!-- Icon -->
               <span class="menu-icon">
-                <i class="mdi mdi-speedometer"></i>
+                <i class="fas fa-gauge-high"></i>
               </span>
               <span class="menu-title">Dashboard</span>
             </a>
@@ -109,7 +109,7 @@
             <a class="nav-link" href="">
               <!-- Icon -->
               <span class="menu-icon">
-                <i class="mdi mdi-account-lock"></i>
+                <i class="fas fa-users-gear"></i>
               </span>
               <span class="menu-title">Administrators</span>
             </a>
@@ -121,7 +121,8 @@
                 aria-controls="instructors">
               <!-- Icon -->
               <span class="menu-icon">
-                <i class="mdi mdi-account-supervisor"></i>
+                <!-- <i class="fas fa-person-chalkboard"></i> -->
+                <i class="fas fa-users"></i>
               </span>
               <span class="menu-title">Instructors</span>
               <i class="menu-arrow"></i>
@@ -153,7 +154,7 @@
             <a class="nav-link" href="">
               <!-- Icon -->
               <span class="menu-icon">
-                <i class="mdi mdi-account-multiple"></i>
+                <i class="fas fa-user-graduate"></i>
               </span>
               <span class="menu-title">Students</span>
             </a>
@@ -185,6 +186,36 @@
               </ul>
             </div>
           </li> -->
+
+        </ul>
+        <!-- End oof Nav items -->
+
+        <!-- Nav items -->
+        <ul class="nav">
+          <li class="nav-item nav-category">
+            <span class="nav-link">System</span>
+          </li>
+          <!-- Dashboard -->
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="">
+              <!-- Icon -->
+              <span class="menu-icon">
+                <i class="fas fa-gears"></i>
+              </span>
+              <span class="menu-title">Setting</span>
+            </a>
+          </li>
+
+          <!-- Logout -->
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="">
+              <!-- Icon -->
+              <span class="menu-icon">
+                <i class="fas fa-right-from-bracket"></i>
+              </span>
+              <span class="menu-title">Logout</span>
+            </a>
+          </li>
 
         </ul>
         <!-- End oof Nav items -->
@@ -312,7 +343,7 @@
         <div class="main-panel">
           <div class="content-wrapper">
 
-              <div class="row">
+              <!-- <div class="row">
                 <div class="col-xl-3 col-md-3 col-sm-6 grid-margin stretch-card">
                   <div class="card">
                     <div class="card-body">
@@ -393,22 +424,110 @@
                     </div>
                   </div>
                 </div>
+              </div> -->
+
+              <!-- Status -->
+              <div class="row">
+                <div class="col-xl-3 col-md-3 col-sm-6 grid-margin stretch-card">
+                  <!-- Card -->
+                  <div class="card">
+                    <!-- Card Body -->
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-9">
+                          <div class="d-flex align-items-center align-self-start">
+                            <h3 class="mb-0">200</h3>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="icon icon-box-success ">
+                            <span class="fas fa-user-graduate icon-item"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <h6 class="mb-0 font-weight-normal">Students registered</h6>
+                    </div>
+                    <!-- End of Card Body -->
+                  </div>
+                  <!-- Card -->
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-6 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-9">
+                          <div class="d-flex align-items-center align-self-start">
+                            <h3 class="mb-0">$17.34</h3>
+                            <p class="text-success ml-2 mb-0 font-weight-medium">+11%</p>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="icon icon-box-success">
+                            <span class="mdi mdi-arrow-top-right icon-item"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <h6 class="text-muted font-weight-normal">Revenue current</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-6 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-9">
+                          <div class="d-flex align-items-center align-self-start">
+                            <h3 class="mb-0">$12.34</h3>
+                            <p class="text-danger ml-2 mb-0 font-weight-medium">-2.4%</p>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="icon icon-box-danger">
+                            <span class="mdi mdi-arrow-bottom-left icon-item"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <h6 class="text-muted font-weight-normal">Daily Income</h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-3 col-md-3 col-sm-6 grid-margin stretch-card">
+                  <div class="card">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-9">
+                          <div class="d-flex align-items-center align-self-start">
+                            <h3 class="mb-0">$31.53</h3>
+                            <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
+                          </div>
+                        </div>
+                        <div class="col-3">
+                          <div class="icon icon-box-success ">
+                            <span class="mdi mdi-arrow-top-right icon-item"></span>
+                          </div>
+                        </div>
+                      </div>
+                      <h6 class="text-muted font-weight-normal">Expense current</h6>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <!-- End of Status -->
 
           </div>
           <!-- content-wrapper ends -->
-          <!-- partial:../../partials/_footer.html -->
+
+          <!-- Footer -->
           <footer class="footer">
             <div class="container-fluid">
               <div class="d-sm-flex justify-content-center justify-content-sm-between">
-                <!-- <span >Copyright © bootstrapdash.com 2020</span> -->
                 <span class=" d-block text-center text-sm-left d-sm-inline-block">
                   &copy; Copyright All rights reserved 2022.
                 </span>
               </div>
             </div>
           </footer>
-          <!-- partial -->
+          <!-- End of Footer -->
         </div>
         <!-- End of main panel -->
       </div>
