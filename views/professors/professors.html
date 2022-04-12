@@ -1,0 +1,651 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Admin Panel</title>
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+    <!-- plugins:css -->
+    <!-- Material Design icon -->
+    <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="../../assets/vendors/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/fontawesome-v5/css/all.min.css">
+
+
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <style>
+        body{
+            background-color: transparent;
+            background-image: url("./img/1.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- Sidebar -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <!-- Sidebar Brand -->
+        <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
+          <a class="sidebar-brand brand-logo" href="">
+            <span>Control Panel</span>
+          </a>
+          <a class="sidebar-brand brand-logo-mini" href="">
+            <span>C.P</span>
+          </a>
+        </div>
+        <!-- End of Sidebar Brand -->
+
+        <!-- Nav items -->
+        <ul class="nav">
+          <!-- profile -->
+          <li class="nav-item profile">
+            <div class="profile-desc">
+              <div class="profile-pic">
+                <div class="count-indicator">
+                  <img class="img-xs rounded-circle " src="../../assets/images/default.jpg" alt="">
+                  <span class="count bg-success"></span>
+                </div>
+                <div class="profile-name">
+                  <h5 class="user-name">Islam Diab</h5>
+                  <span>User Type</span>
+                </div>
+              </div>
+              <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
+              <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-cog text-primary"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-dark rounded-circle">
+                      <i class="mdi mdi-onepassword  text-info"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content">
+                    <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>
+                  </div>
+                </a>
+                
+              </div>
+            </div>
+          </li>
+          <!-- End of profile -->
+
+          <li class="nav-item nav-category">
+            <span class="nav-link">Menu</span>
+          </li>
+          <!-- Dashboard -->
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../../index.html">
+              <!-- Icon -->
+              <span class="menu-icon">
+                <i class="fas fa-gauge-high"></i>
+              </span>
+              <span class="menu-title">Dashboard</span>
+            </a>
+          </li>
+
+          <!-- Administrators -->
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../administrators/administrators.html">
+              <!-- Icon -->
+              <span class="menu-icon">
+                <i class="fas fa-users-gear"></i>
+              </span>
+              <span class="menu-title">Administrators</span>
+            </a>
+          </li>
+
+          <!-- Instructors -->
+          <li class="nav-item menu-items active">
+            <a class="nav-link" data-toggle="collapse" href="#instructors" aria-expanded="false" 
+                aria-controls="instructors">
+              <!-- Icon -->
+              <span class="menu-icon">
+                <!-- <i class="fas fa-person-chalkboard"></i> -->
+                <i class="fas fa-users"></i>
+              </span>
+              <span class="menu-title">Instructors</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="instructors">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> 
+                  <a class="nav-link" href="./professors.html">
+                    <!-- <span class="menu-icon">
+                      <i class="mdi mdi-arrow-right"></i>
+                    </span> -->
+                    Professors
+                  </a>
+                </li>
+                <li class="nav-item"> 
+                  <a class="nav-link" href="../assistants/assistants.html">
+                    <!-- <span class="menu-icon">
+                      <i class="mdi mdi-arrow-right"></i>
+                    </span> -->
+                    Assistants
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Students -->
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="../students/students.html">
+              <!-- Icon -->
+              <span class="menu-icon">
+                <i class="fas fa-user-graduate"></i>
+              </span>
+              <span class="menu-title">Students</span>
+            </a>
+          </li>
+
+          <!-- Teams Staff -->
+          <!-- <li class="nav-item menu-items">
+            <a class="nav-link" href="">
+              <span class="menu-icon">
+                <i class="mdi mdi-account-"></i>
+              </span>
+              <span class="menu-title">Teams</span>
+            </a>
+          </li> -->
+
+          <!-- <li class="nav-item menu-items">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="true" aria-controls="ui-basic">
+              <span class="menu-icon">
+                <i class="mdi mdi-laptop"></i>
+              </span>
+              <span class="menu-title">Basic UI Elements</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse show" id="ui-basic" style="">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+              </ul>
+            </div>
+          </li> -->
+
+        </ul>
+        <!-- End oof Nav items -->
+
+        <!-- Nav items -->
+        <ul class="nav">
+          <li class="nav-item nav-category">
+            <span class="nav-link">System</span>
+          </li>
+          <!-- Setting -->
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="">
+              <!-- Icon -->
+              <span class="menu-icon">
+                <i class="fas fa-gears"></i>
+              </span>
+              <span class="menu-title">Setting</span>
+            </a>
+          </li>
+
+          <!-- Logout -->
+          <li class="nav-item menu-items">
+            <a class="nav-link" href="">
+              <!-- Icon -->
+              <span class="menu-icon">
+                <i class="fas fa-right-from-bracket"></i>
+              </span>
+              <span class="menu-title">Logout</span>
+            </a>
+          </li>
+
+        </ul>
+        <!-- End oof Nav items -->
+      </nav>
+      <!-- End of Sidebar -->
+
+      <!-- Page Body Wrapper -->
+      <div class="container-fluid page-body-wrapper">
+
+        <!-- Navbar -->
+        <nav class="navbar p-0 fixed-top d-flex flex-row">
+          <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
+            <a class="navbar-brand brand-logo-mini" href="../../index.html">
+              <img src="../../assets/images/logo-mini.svg" alt="logo" />
+            </a>
+          </div>
+          <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch">
+            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+              <span class="fas fa-align-center"></span>
+            </button>
+            <!-- Form -->
+            <!-- <ul class="navbar-nav w-100">
+              <li class="nav-item w-100">
+                <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
+                  <input type="text" class="form-control" placeholder="Search products">
+                </form>
+              </li>
+            </ul> -->
+            <!-- End of Form -->
+            <ul class="navbar-nav navbar-nav-right">
+
+              <!-- Add Items -->
+              <li class="nav-item dropdown">
+                <a class="nav-link btn crayons-btn" id="profileDropdown" href="#" data-toggle="dropdown">
+                  <!-- Icon -->
+                  <div class="icon d-inline-block">
+                    <i class="fas fa-plus"></i>
+                  </div>
+                  <span class="d-inline-block">Add</span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                  <div class="dropdown-divider"></div>
+                  <!-- Administrator -->
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="fas fa-users-cog text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Administrator</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <!-- Professor -->
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="fas fa-users text-warning"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Professor</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <!-- Assistant -->
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="fas fa-users text-primary"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Assistant</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <!-- Student -->
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="fas fa-user-graduate text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Student</p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <!-- End of Add Items -->
+
+              <!-- Notification -->
+              <li class="nav-item dropdown">
+                <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                  <i class="mdi mdi-bell"></i>
+                  <span class="count bg-danger"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                  <h6 class="p-3 mb-0">Notifications</h6>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-calendar text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-2">Event today</p>
+                      <p class="ellipsis mb-0"> Just a reminder that you have an event today </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-cog text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-2">Settings</p>
+                      <p class="ellipsis mb-0"> Update dashboard </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-link-variant text-warning"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-2">Launch Admin</p>
+                      <p class="ellipsis mb-0"> New admin wow! </p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="p-3 d-block text-center btn btn-link btn-notification" href="">See all notifications</a>
+                </div>
+              </li>
+              <!-- End of Notification -->
+
+              <!-- User Profile -->
+              <li class="nav-item dropdown">
+                <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
+                  <div class="navbar-profile">
+                    <img class="img-xs rounded-circle" src="../../assets/images/default.jpg" alt="">
+                    <p class="mb-0 d-none d-sm-block navbar-profile-name">Islam Diab</p>
+                    <i class="mdi mdi-menu-down d-none d-sm-block"></i>
+                  </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-cog text-success"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Settings</p>
+                    </div>
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item preview-item">
+                    <div class="preview-thumbnail">
+                      <div class="preview-icon bg-dark rounded-circle">
+                        <i class="mdi mdi-logout text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="preview-item-content">
+                      <p class="preview-subject mb-1">Log out</p>
+                    </div>
+                  </a>
+                </div>
+              </li>
+              <!-- End of User Profile -->
+            </ul>
+            <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+              <span class="mdi mdi-format-line-spacing"></span>
+            </button>
+          </div>
+        </nav>
+        <!-- End of Navbar -->
+
+        <!-- Main Panel -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+
+            <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6">
+              <h2 class="page-name">Professors</h2>
+            </div>
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">Professors</li>
+              </ol>
+            </div>
+        </div>
+    </div>
+
+      </section>
+  
+      <!-- Main content -->
+      <main class="content">
+        <div class="container-fluid">
+            <section class="Professors-section section">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-12 mb-4 pl-0">
+                        <!-- card -->
+                        <div class="card card-user">
+                            <!-- Card Body -->
+                            <div class="card-body user-details text-center">
+                                <!-- User image -->
+                                <div class="user-image">
+                                    <img class="img-fluid rounded-circle" 
+                                        src="../../assets/images/default.jpg" 
+                                        alt="User image" width="80px">
+                                </div>
+                                <!-- User info -->
+                                <div class="user-info">
+                                    <h4 class="m-0">Test</h4>
+                                    <p class="m-0">Professor / Dr</p>
+                                </div>
+                            </div>
+                            <!-- End of card body -->
+                        </div>
+                        <!-- End of card -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 mb-4">
+                        <!-- card -->
+                        <div class="card card-user">
+                            <!-- Card Body -->
+                            <div class="card-body user-details text-center">
+                                <!-- User image -->
+                                <div class="user-image">
+                                    <img class="img-fluid rounded-circle" 
+                                        src="../../assets/images/default.jpg" 
+                                        alt="User image" width="80px">
+                                </div>
+                                <!-- User info -->
+                                <div class="user-info">
+                                    <h4 class="m-0">Test</h4>
+                                    <p class="m-0">Professor / Dr</p>
+                                </div>
+                            </div>
+                            <!-- End of card body -->
+                        </div>
+                        <!-- End of card -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 mb-4">
+                        <!-- card -->
+                        <div class="card card-user">
+                            <!-- Card Body -->
+                            <div class="card-body user-details text-center">
+                                <!-- User image -->
+                                <div class="user-image">
+                                    <img class="img-fluid rounded-circle" 
+                                        src="../../assets/images/default.jpg" 
+                                        alt="User image" width="80px">
+                                </div>
+                                <!-- User info -->
+                                <div class="user-info">
+                                    <h4 class="m-0">Test</h4>
+                                    <p class="m-0">Professor / Dr</p>
+                                </div>
+                            </div>
+                            <!-- End of card body -->
+                        </div>
+                        <!-- End of card -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 mb-4 pr-0">
+                        <!-- card -->
+                        <div class="card card-user">
+                            <!-- Card Body -->
+                            <div class="card-body user-details text-center">
+                                <!-- User image -->
+                                <div class="user-image">
+                                    <img class="img-fluid rounded-circle" 
+                                        src="../../assets/images/default.jpg" 
+                                        alt="User image" width="80px">
+                                </div>
+                                <!-- User info -->
+                                <div class="user-info">
+                                    <h4 class="m-0">Test</h4>
+                                    <p class="m-0">Professor / Dr</p>
+                                </div>
+                            </div>
+                            <!-- End of card body -->
+                        </div>
+                        <!-- End of card -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-12 mb-4 pl-0">
+                        <!-- card -->
+                        <div class="card card-user">
+                            <!-- Card Body -->
+                            <div class="card-body user-details text-center">
+                                <!-- User image -->
+                                <div class="user-image">
+                                    <img class="img-fluid rounded-circle" 
+                                        src="../../assets/images/default.jpg" 
+                                        alt="User image" width="80px">
+                                </div>
+                                <!-- User info -->
+                                <div class="user-info">
+                                    <h4 class="m-0">Test</h4>
+                                    <p class="m-0">Professor / Dr</p>
+                                </div>
+                            </div>
+                            <!-- End of card body -->
+                        </div>
+                        <!-- End of card -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 mb-4">
+                        <!-- card -->
+                        <div class="card card-user">
+                            <!-- Card Body -->
+                            <div class="card-body user-details text-center">
+                                <!-- User image -->
+                                <div class="user-image">
+                                    <img class="img-fluid rounded-circle" 
+                                        src="../../assets/images/default.jpg" 
+                                        alt="User image" width="80px">
+                                </div>
+                                <!-- User info -->
+                                <div class="user-info">
+                                    <h4 class="m-0">Test</h4>
+                                    <p class="m-0">Professor / Dr</p>
+                                </div>
+                            </div>
+                            <!-- End of card body -->
+                        </div>
+                        <!-- End of card -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 mb-4">
+                        <!-- card -->
+                        <div class="card card-user">
+                            <!-- Card Body -->
+                            <div class="card-body user-details text-center">
+                                <!-- User image -->
+                                <div class="user-image">
+                                    <img class="img-fluid rounded-circle" 
+                                        src="../../assets/images/default.jpg" 
+                                        alt="User image" width="80px">
+                                </div>
+                                <!-- User info -->
+                                <div class="user-info">
+                                    <h4 class="m-0">Test</h4>
+                                    <p class="m-0">Professor / Dr</p>
+                                </div>
+                            </div>
+                            <!-- End of card body -->
+                        </div>
+                        <!-- End of card -->
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-12 mb-4 pr-0">
+                        <!-- card -->
+                        <div class="card card-user">
+                            <!-- Card Body -->
+                            <div class="card-body user-details text-center">
+                                <!-- User image -->
+                                <div class="user-image">
+                                    <img class="img-fluid rounded-circle" 
+                                        src="../../assets/images/default.jpg" 
+                                        alt="User image" width="80px">
+                                </div>
+                                <!-- User info -->
+                                <div class="user-info">
+                                    <h4 class="m-0">Test</h4>
+                                    <p class="m-0">Professor / Dr</p>
+                                </div>
+                            </div>
+                            <!-- End of card body -->
+                        </div>
+                        <!-- End of card -->
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+        <!-- /.container-fluid -->
+      </main>
+      <!-- /.content -->
+
+          </div>
+          <!-- content-wrapper ends -->
+
+          <!-- Footer -->
+          <footer class="footer">
+            <div class="container-fluid">
+              <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                <span class=" d-block text-center text-sm-left d-sm-inline-block">
+                  &copy; Copyright All rights reserved 2022.
+                </span>
+              </div>
+            </div>
+          </footer>
+          <!-- End of Footer -->
+        </div>
+        <!-- End of main panel -->
+      </div>
+      <!-- End page-body-wrapper -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+
+    <script src="../../assets/vendors/jquery/js/jquery-3.5.1.js"></script>
+    
+    
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <!-- <script src="../../assets/js/off-canvas.js"></script> -->
+    <script src="../../assets/js/hoverable-collapse.js"></script>
+    <script src="../../assets/js/misc.js"></script>
+    <!-- <script src="../../assets/js/settings.js"></script>
+    <script src="../../assets/js/todolist.js"></script> -->
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <!-- End custom js for this page -->
+  </body>
+</html>
