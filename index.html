@@ -15,6 +15,9 @@
     <!-- Fontawesome -->
     <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css">
 
+    <!-- Daterange picker -->
+    <!-- <link rel="stylesheet" href="assets/vendors/daterangepicker/daterangepicker.css"> -->
+
     <!-- Layout styles -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -618,6 +621,8 @@
               </div>
               <!-- End of Status -->
 
+              
+
           </div>
           <!-- content-wrapper ends -->
 
@@ -640,17 +645,52 @@
     <!-- container-scroller -->
     <!-- plugins:js -->
     <script src="assets/vendors/js/vendor.bundle.base.js"></script>
-    <!-- endinject -->
-    <!-- Plugin js for this page -->
+
+    <!-- <script src="assets/vendors/jquery/js/jquery-3.5.1.js"></script> -->
+    <!-- jQuery UI 1.11.4 -->
+    <!-- <script src="assets/vendors/jquery-ui/jquery-ui.min.js"></script> -->
+
+    <!-- daterangepicker -->
+    <!-- <script src="assets/vendors/moment/moment.min.js"></script> -->
+    <!-- <script src="assets/vendors/daterangepicker/daterangepicker.js"></script> -->
+
     <!-- End plugin js for this page -->
     <!-- inject:js -->
     <!-- <script src="assets/js/off-canvas.js"></script> -->
     <script src="assets/js/hoverable-collapse.js"></script>
     <script src="assets/js/misc.js"></script>
-    <!-- <script src="assets/js/settings.js"></script>
-    <script src="assets/js/todolist.js"></script> -->
-    <!-- endinject -->
-    <!-- Custom js for this page -->
-    <!-- End custom js for this page -->
+
+    <!-- <script>
+      $(function (){
+        'use strict'
+        $('#calendar').daterangepicker({
+          format: 'L',
+          inline: true,
+          ranges: {
+            Today: [moment(), moment()],
+            Yesterday: [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+          },
+          startDate: moment().subtract(29, 'days'),
+          endDate: moment()
+        }, function (start, end) {
+          // eslint-disable-next-line no-alert
+          alert('You chose: ' + start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+        });
+
+          // The Calender
+        // $('#calendar').datetimepicker({
+        //   format: 'L',
+        //   inline: true
+        // })
+
+        // $('#calendar').datetimepicker()
+        
+      })
+    </script> -->
+
   </body>
 </html>
