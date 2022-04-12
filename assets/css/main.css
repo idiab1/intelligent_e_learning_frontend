@@ -327,10 +327,6 @@
     margin-bottom: 1.7rem;
 }
 
-.main-panel .content .card .card-body .fillters-buttons .btn-group{
-    /* margin-bottom: 1.7rem; */
-}
-
 .main-panel .content .card .card-body .fillters-buttons .btn-group button{
     padding: 0.68rem 0.9rem;
 }
@@ -341,21 +337,22 @@
 
 }
 
-.main-panel .content .card table.dataTable {
-    color: #fafbff;
-    margin: 2.7rem 0 !important;
-}
 
-table.dataTable thead .sorting_asc {
-    background: url("../images/sort_asc.png") no-repeat right;
+.main-panel .content .section .card .card.section-form{
+    box-shadow: none;
+    border: none;
 }
-table.dataTable thead .sorting_desc {
-    background: url("../images/sort_desc.png") no-repeat right;
+.main-panel .content .section .card .card.section-info{
+    height: 100%;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    background-color: var(--primary-color) !important;
+    background: url("../images/setting-img.svg") no-repeat bottom;
+    background-size: contain;
 }
-table.dataTable thead .sorting{
-    background: url("../images/sort_both.png") no-repeat right;
-}
-
 
 /* ********************** ******* ********************* */
 /* ********************** ******* ********************* */
@@ -446,6 +443,20 @@ table.dataTable thead .sorting{
 /* ********************** Custom ********************* */
 /* ********************** ******* ********************* */
 /* ********************** ******* ********************* */
+.main-panel .content .card table.dataTable {
+    color: #fafbff;
+    margin: 2.7rem 0 !important;
+}
+table.dataTable thead .sorting_asc {
+    background: url("../images/sort_asc.png") no-repeat right;
+}
+table.dataTable thead .sorting_desc {
+    background: url("../images/sort_desc.png") no-repeat right;
+}
+table.dataTable thead .sorting{
+    background: url("../images/sort_both.png") no-repeat right;
+}
+
 .form-control, .asColorPicker-input,
 .dataTables_wrapper select, 
 .jsgrid .jsgrid-table .jsgrid-filter-row input[type=text], 
