@@ -1,1 +1,1 @@
-# intelligent_e_learning_proessor_panel
+# intelligent_e_learning_professor_panel
