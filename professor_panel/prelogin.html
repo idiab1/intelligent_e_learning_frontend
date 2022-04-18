@@ -22,6 +22,10 @@
 
     <!-- Main Styles -->
     <link rel="stylesheet" href="assets/css/main.css">
+
+    <!-- Sign style -->
+    <link rel="stylesheet" href="assets/css/sign.css">
+
     <style>
         body{
             background-color: transparent;
@@ -30,50 +34,6 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
-
-        .page-body-wrapper{
-            width: 100%;
-        }
-
-        .main-panel{
-            padding: 0;
-        }
-
-        .sign-page {
-          height: 100vh;
-        }
-
-        .sign-page .user-types-container{
-          background-color: #fff;
-          padding: 3rem;
-        }
-        
-        .sign-page .user-types-container .types-header .heading{
-          position: relative;
-        }
-        .sign-page .user-types-container .types-header .heading:after{
-          content: "";
-          position: absolute;
-          left: 0;
-          bottom: -8px;
-          width: 35px;
-          height: 6px;
-          background-color: #344cb7;
-        }
-
-        .sign-page .user-types-container .types-header h2 {
-            margin: 0;
-            color: #001e6c;
-            text-transform: uppercase;
-        }
-
-        .sign-page .user-types-container .types-content{
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          padding-top: 3rem;
-        }
-        
     </style>
 
   </head>
@@ -83,8 +43,6 @@
 
       <!-- Page Body Wrapper -->
       <div class="container-fluid page-body-wrapper">
-
-        
 
         <!-- Main Panel -->
         <main class="main-panel">
@@ -101,7 +59,7 @@
                     <!-- Types Header -->
                     <div class="types-header">
                       <div class="heading">
-                        <h2>Select User Type</h2>
+                        <h2>Choose Account Type</h2>
                       </div>
                     </div>
 
@@ -113,11 +71,14 @@
                           <div class="card user-type">
                             <div class="card-body p-0">
                               <a href="./login.html" class="btn d-block">
-                                <!-- Image -->
-                                <div class="image">
-                                  <img src="" alt="">
+                                <!-- icon -->
+                                <div class="icon">
+                                  <img class="img-fluid rounded-circle" src="assets/images/student.png" alt="">
                                 </div>
-                                Student
+                                <!-- Type name -->
+                                <div class="name">
+                                  <h4>Student</h4>
+                                </div>
                               </a>
                             </div>
                           </div>
@@ -128,11 +89,14 @@
                           <div class="card user-type">
                             <div class="card-body p-0">
                               <a href="./login.html" class="btn d-block">
-                                <!-- Image -->
-                                <div class="image">
-                                  <img src="" alt="">
+                                <!-- icon -->
+                                <div class="icon">
+                                  <img class="img-fluid rounded-circle" src="assets/images/professor.png" alt="">
                                 </div>
-                                Professor
+                                <!-- Type name -->
+                                <div class="name">
+                                  <h4>Professor</h4>
+                                </div>
                               </a>
                             </div>
                           </div>
@@ -143,11 +107,14 @@
                           <div class="card user-type">
                             <div class="card-body p-0">
                               <a href="./login.html" class="btn d-block">
-                                <!-- Image -->
-                                <div class="image">
-                                  <img src="" alt="">
+                                <!-- icon -->
+                                <div class="icon">
+                                  <img class="img-fluid rounded-circle" src="assets/images/assistant.png" alt="">
                                 </div>
-                                Assistant
+                                <!-- Type name -->
+                                <div class="name">
+                                  <h4>Assistant</h4>
+                                </div>
                               </a>
                             </div>
                           </div>
