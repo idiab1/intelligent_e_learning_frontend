@@ -107,7 +107,7 @@
         -moz-transform: translate(0px, calc(100% / 12));
         -ms-transform: translate(0px, calc(100% / 12));
         -o-transform: translate(0px, calc(100% / 12));
-}
+    }
     .sign-page .user-types-container {
         padding: 2rem;
         box-shadow: none;
@@ -118,16 +118,13 @@
     .sign-page .user-types-container .types-header h2 {
         font-size: 1.335rem;
     }
-    
     .sign-page .user-types-container .types-content .user-type:nth-of-type(2) {
         margin-bottom: 0rem;
     }
-
     .sign-page .user-types-container .types-content .user-type .icon {
         height: 60px;
         margin: 10px 7px 7px;
     }
-
 }
 
 @media (max-width: 767.98px){
@@ -136,8 +133,23 @@
     }
 }
 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .sign-page {
+        transform: translate(0px, calc(100% / 7));
+        -webkit-transform: translate(0px, calc(100% / 7));
+        -moz-transform: translate(0px, calc(100% / 7));
+        -ms-transform: translate(0px, calc(100% / 7));
+        -o-transform: translate(0px, calc(100% / 7));
+    }
+}
 
-
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .sign-page .user-types-container .types-content .user-type .name h4 {
+        font-size: 1.235rem;
+    }
+}
 
 
 /* ********************** ******* ********************* */
