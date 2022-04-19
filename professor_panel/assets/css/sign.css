@@ -187,6 +187,12 @@ section{
 .login-page .sign-container .sign-form{
     background-color: transparent;
 }
+.login-page .sign-container .sign-form .card-header{
+    background-color: #344cb7;
+}
+.login-page .sign-container .sign-form .card-header h4{
+    margin: 0;
+}
 .login-page .sign-container .sign-form form label{
     color: #344cb7;
     font-weight: 500;
