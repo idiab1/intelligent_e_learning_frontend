@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+section{
+    height: 100vh;
+}
+
 /* ********************** ******* ********************* */
 /* ********************** ******* ********************* */
 /* ********************* Sign Page ******************** */
@@ -151,19 +155,91 @@
     }
 }
 
+/* ********************** ******* ********************* */
+/* ********************** ******* ********************* */
+/* ********************* Login Page ******************* */
+/* ********************** ******* ********************* */
+/* ********************** ******* ********************* */
+.login-page {
+    background-color: rgb(163 180 255 / 7%) !important;
+    background: url("../images/shape-bg.png") center center no-repeat;
+    background-size: cover;
+}
+.login-page .page-header {
+    margin: 1.5rem 0;
+}
+
+.login-page .sign-container{
+    transform: translate(0px, calc(100vh / 6));
+    -webkit-transform: translate(0px, calc(100vh / 6));
+    -moz-transform: translate(0px, calc(100vh / 6));
+    -ms-transform: translate(0px, calc(100vh / 6));
+    -o-transform: translate(0px, calc(100vh / 6));
+}
+
+.login-page .sign-container .sign-info{
+    height: 100%;
+    background-color: #344cb7 !important;
+    background: url("../images/login-form.svg") center bottom no-repeat;
+    background-size: 240px;
+}
+
+.login-page .sign-container .sign-form{
+    background-color: transparent;
+}
+.login-page .sign-container .sign-form form label{
+    color: #344cb7;
+    font-weight: 500;
+    margin-bottom: 0.7rem;
+}
+.login-page .sign-container .sign-form form label.form-check-label{
+    padding-left: 0;
+}
+.login-page .sign-container .sign-form form input{
+    color: #344cb7;
+}
+.login-page .sign-container .sign-form form input:focus{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-left: 8px solid #344cb7;
+}
+
+
+
+
+
+
+
 
 /* ********************** ******* ********************* */
 /* ********************** ******* ********************* */
 /* ********************* Grouping ******************** */
 /* ********************** ******* ********************* */
 /* ********************** ******* ********************* */
+.btn{
+    padding: 0.5rem;
+}
+
 .sign-page .user-types-container .types-content .user-type,
 .sign-page .user-types-container .types-content .user-type .name h4,
-.sign-page .user-types-container .types-content .user-type .icon img{
+.sign-page .user-types-container .types-content .user-type .icon img,
+.login-page .sign-container .sign-form form input{
     transition: all .27s ease-in-out !important;
     -webkit-transition: all .27s ease-in-out !important;
     -moz-transition: all .27s ease-in-out !important;
     -ms-transition: all .27s ease-in-out !important;
     -o-transition: all .27s ease-in-out !important;
+}
+
+.login-page .sign-container .sign-info,
+.login-page .sign-container .sign-form{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
 }
 
