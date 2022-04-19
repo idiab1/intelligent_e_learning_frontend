@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Setting</title>
+    <title>Login</title>
     <link rel="shortcut icon" href="assets/images/favicon.png" />
     <!-- plugins:css -->
     <!-- Material Design icon -->
@@ -25,7 +25,7 @@
 
     <!-- Sign Style -->
     <link rel="stylesheet" href="assets/css/sign.css">
-    <style>
+    <!-- <style>
         body{
             background-color: transparent;
             background-image: url("./img/1.png");
@@ -63,7 +63,7 @@
             margin-bottom: 25px;
         }
 
-    </style>
+    </style> -->
 
   </head>
   <body>
@@ -73,63 +73,68 @@
       <!-- Page Body Wrapper -->
       <div class="container-fluid page-body-wrapper">
 
-        
-
         <!-- Main Panel -->
         <main class="main-panel">
           <div class="content-wrapper p-0">
-
-            
-
-            <!-- Sign Container -->
-            <div class="sign-container">
-              <div class="row" style="height: 100vh;">
-                <div class="col-md-3">
-                  <div class="sign-info">
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                      <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" 
-                        role="tab" aria-controls="v-pills-home" aria-selected="true">
-                        Home
-                      </a>
-                      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" 
-                        role="tab" aria-controls="v-pills-profile" aria-selected="false">
-                        Profile
-                      </a>
-                      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" 
-                        role="tab" aria-controls="v-pills-messages" aria-selected="false">
-                        Messages
+            <!-- Login Page -->
+            <section class="login-page section">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <!-- Page Header -->
+                    <div class="page-header">
+                      <a class="btn btn-back crayons-btn" href="./prelogin.html">
+                        <span class="d-inline-block pr-2">
+                          Back
+                        </span>
+                        <!-- Icon -->
+                        <div class="icon d-inline-block">
+                          <i class="fas fa-arrow-left"></i>
+                        </div>
                       </a>
                     </div>
+                    <!-- End of Page Header -->
                   </div>
                 </div>
-                <div class="col-md-9">
-                  <div class="tab-content" id="v-pills-tabContent">
-                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                      <!-- Sign Card -->
-                        <div class="card sign-card-form">
+                <!-- Sign Container -->
+                <div class="sign-container">
+                  <div class="row">
+                    <div class="col-8 m-auto">
+                      <div class="row">
+                        <div class="col-md-5 p-0">
+                          <!-- Sign Info -->
+                          <div class="card sign-info">
+                            <!-- Card Body -->
+                            <div class="card-body"></div>
+                            <!-- End of Card Body -->
+                          </div>
+                          <!-- End of Sign Info -->
+                        </div>
+                        <div class="col-md-7 p-0">
+                          <!-- Sign Card form -->
+                          <div class="card sign-form">
                             <!-- card body -->
                             <div class="card-body">
                                 <form method="POST" action="">
                                     <!-- Email Address -->
-                                    <div class="form-group">
+                                    <div class="form-group mb-4">
                                         <label for="email">E-mail Address</label>
                                         <!-- Input email field -->
-                                        <input id="email" type="email" class="form-controls"
+                                        <input id="email" type="email" class="form-control"
                                           name="email" value="" required autocomplete="email" autofocus
                                           placeholder="" aria-describedby="email" aria-label="email" >
-
+        
                                     </div>
-
+        
                                     <!-- Password -->
-                                    <div class="form-group">
+                                    <div class="form-group m-0">
                                         <label for="password">Password</label>
                                         <!-- Input password field -->
                                         <input id="password" type="password" class="form-control"
                                           name="password" required autocomplete="current-password"
                                           placeholder="" aria-describedby="password" aria-label="password" >
-                                       
                                     </div>
-
+        
                                     <!-- Remember Me -->
                                     <div class="form-row">
                                         <div class="col col-md-5">
@@ -138,7 +143,7 @@
                                                     <!-- Check Input -->
                                                     <input class="form-check-input" type="checkbox" name="remember"
                                                     id="remember">
-
+        
                                                     <label class="form-check-label" for="remember">
                                                         Remember Me
                                                     </label>
@@ -147,35 +152,32 @@
                                         </div>
                                         
                                     </div>
-
+        
                                     <!-- Button  -->
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-primary crayons-btn btn-block">
+                                        <button type="submit" class="btn crayons-btn btn-block">
                                             Login
                                         </button>
                                     </div>
-
+        
                                 </form>
                             </div>
+                          </div>
+                          <!-- End of Sign Card form -->
                         </div>
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                    
-                    </div>
-                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                      
+                      </div>
                     </div>
                   </div>
+    
                 </div>
+                <!-- End of Sign Container -->
               </div>
 
-            </div>
-            <!-- End of Sign Container -->
+            </section>
+            <!-- End of Login Page -->
 
           </div>
           <!-- content-wrapper ends -->
-
-          
         </main>
         <!-- End of main panel -->
       </div>
