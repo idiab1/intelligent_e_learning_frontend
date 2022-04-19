@@ -99,23 +99,26 @@
 @media (max-width: 575.98px) {
     .main-panel .content-wrapper {
         padding: 0;
+        background-color: #fff;
     }
     .sign-page {
-        transform: translate(0px, 0px);
-        -webkit-transform: translate(0px, 0px);
-        -moz-transform: translate(0px, 0px);
-        -ms-transform: translate(0px, 0px);
-        -o-transform: translate(0px, 0px);
-    }
+        transform: translate(0px, calc(100% / 12));
+        -webkit-transform: translate(0px, calc(100% / 12));
+        -moz-transform: translate(0px, calc(100% / 12));
+        -ms-transform: translate(0px, calc(100% / 12));
+        -o-transform: translate(0px, calc(100% / 12));
+}
     .sign-page .user-types-container {
         padding: 2rem;
+        box-shadow: none;
+    }
+    .sign-page .user-types-container .types-content {
+        padding-top: 4rem;
     }
     .sign-page .user-types-container .types-header h2 {
         font-size: 1.335rem;
     }
-    .sign-page .user-types-container .types-content .user-type {
-        margin-bottom: 1.6rem;
-    }
+    
     .sign-page .user-types-container .types-content .user-type:nth-of-type(2) {
         margin-bottom: 0rem;
     }
@@ -127,7 +130,11 @@
 
 }
 
-
+@media (max-width: 767.98px){
+    .sign-page .user-types-container .types-content .user-type {
+        margin-bottom: 1.6rem;
+    }
+}
 
 
 
