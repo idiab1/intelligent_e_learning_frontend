@@ -1,0 +1,251 @@
+.page-body-wrapper{
+    width: 100%;
+}
+
+.main-panel{
+    padding: 0;
+}
+
+section{
+    height: 100vh;
+}
+
+/* ********************** ******* ********************* */
+/* ********************** ******* ********************* */
+/* ********************* Sign Page ******************** */
+/* ********************** ******* ********************* */
+/* ********************** ******* ********************* */
+.sign-page {
+    transform: translate(0px, calc(100% / 2));
+    -webkit-transform: translate(0px, calc(100% / 2));
+    -moz-transform: translate(0px, calc(100% / 2));
+    -ms-transform: translate(0px, calc(100% / 2));
+    -o-transform: translate(0px, calc(100% / 2));
+}
+
+.sign-page .user-types-container{
+    background-color: #fff;
+    padding: 3rem;
+    box-shadow: 0 0 10px 0px rgb(52 76 183 / 9%);
+}
+
+.sign-page .user-types-container .types-header .heading{
+    position: relative;
+}
+.sign-page .user-types-container .types-header .heading:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 40px;
+    height: 5px;
+    background-color: #344cb7;
+}
+.sign-page .user-types-container .types-header .heading::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+    width: 60px;
+    height: 5px;
+    background-color: #001e6c;
+}
+
+.sign-page .user-types-container .types-header h2 {
+    margin: 0;
+    color: #001e6c;
+    text-transform: uppercase;
+}
+
+/* Type Content */
+.sign-page .user-types-container .types-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+/* User Type */
+.sign-page .user-types-container .types-content .user-type {
+    background-color: transparent;
+    border-color: rgb(52 76 183 / 15%);
+}
+.sign-page .user-types-container .types-content .user-type:hover{
+    background-color: var(--primary-color);
+}
+
+/* Icon */
+.sign-page .user-types-container .types-content .user-type .icon{
+    height: 70px;
+    margin: 15px 10px 10px;
+}
+.sign-page .user-types-container .types-content .user-type .icon img{
+    height: inherit;
+    border: 4px solid transparent;
+}
+.sign-page .user-types-container .types-content .user-type:hover .icon img{
+    border: 4px solid #fff;
+}
+
+/* Name */
+.sign-page .user-types-container .types-content .user-type .name{
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+.sign-page .user-types-container .types-content .user-type .name h4 {
+    margin: 0;
+    color: var(--primary-color);
+}
+.sign-page .user-types-container .types-content .user-type:hover .name h4{
+    color: #fff;
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .main-panel .content-wrapper {
+        padding: 0;
+        background-color: #fff;
+    }
+    .sign-page {
+        transform: translate(0px, calc(100% / 12));
+        -webkit-transform: translate(0px, calc(100% / 12));
+        -moz-transform: translate(0px, calc(100% / 12));
+        -ms-transform: translate(0px, calc(100% / 12));
+        -o-transform: translate(0px, calc(100% / 12));
+    }
+    .sign-page .user-types-container {
+        padding: 2rem;
+        box-shadow: none;
+    }
+    .sign-page .user-types-container .types-content {
+        padding-top: 4rem;
+    }
+    .sign-page .user-types-container .types-header h2 {
+        font-size: 1.335rem;
+    }
+    .sign-page .user-types-container .types-content .user-type:nth-of-type(2) {
+        margin-bottom: 0rem;
+    }
+    .sign-page .user-types-container .types-content .user-type .icon {
+        height: 60px;
+        margin: 10px 7px 7px;
+    }
+}
+
+@media (max-width: 767.98px){
+    .sign-page .user-types-container .types-content .user-type {
+        margin-bottom: 1.6rem;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .sign-page {
+        transform: translate(0px, calc(100% / 7));
+        -webkit-transform: translate(0px, calc(100% / 7));
+        -moz-transform: translate(0px, calc(100% / 7));
+        -ms-transform: translate(0px, calc(100% / 7));
+        -o-transform: translate(0px, calc(100% / 7));
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .sign-page .user-types-container .types-content .user-type .name h4 {
+        font-size: 1.235rem;
+    }
+}
+
+/* ********************** ******* ********************* */
+/* ********************** ******* ********************* */
+/* ********************* Login Page ******************* */
+/* ********************** ******* ********************* */
+/* ********************** ******* ********************* */
+.login-page {
+    background-color: rgb(163 180 255 / 7%) !important;
+    background: url("../images/shape-bg.png") center center no-repeat;
+    background-size: cover;
+}
+.login-page .page-header {
+    margin: 1.5rem 0;
+}
+
+.login-page .sign-container{
+    transform: translate(0px, calc(100vh / 6));
+    -webkit-transform: translate(0px, calc(100vh / 6));
+    -moz-transform: translate(0px, calc(100vh / 6));
+    -ms-transform: translate(0px, calc(100vh / 6));
+    -o-transform: translate(0px, calc(100vh / 6));
+}
+
+.login-page .sign-container .sign-info{
+    height: 100%;
+    background-color: #344cb7 !important;
+    background: url("../images/login-form.svg") center bottom no-repeat;
+    background-size: 240px;
+}
+
+.login-page .sign-container .sign-form{
+    background-color: transparent;
+}
+.login-page .sign-container .sign-form .card-header{
+    background-color: #344cb7;
+}
+.login-page .sign-container .sign-form .card-header h4{
+    margin: 0;
+}
+.login-page .sign-container .sign-form form label{
+    color: #344cb7;
+    font-weight: 500;
+    margin-bottom: 0.7rem;
+}
+.login-page .sign-container .sign-form form label.form-check-label{
+    padding-left: 0;
+}
+.login-page .sign-container .sign-form form input{
+    color: #344cb7;
+}
+.login-page .sign-container .sign-form form input:focus{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    border-left: 8px solid #344cb7;
+}
+
+
+
+
+
+
+
+
+/* ********************** ******* ********************* */
+/* ********************** ******* ********************* */
+/* ********************* Grouping ******************** */
+/* ********************** ******* ********************* */
+/* ********************** ******* ********************* */
+.btn{
+    padding: 0.5rem;
+}
+
+.sign-page .user-types-container .types-content .user-type,
+.sign-page .user-types-container .types-content .user-type .name h4,
+.sign-page .user-types-container .types-content .user-type .icon img,
+.login-page .sign-container .sign-form form input{
+    transition: all .27s ease-in-out !important;
+    -webkit-transition: all .27s ease-in-out !important;
+    -moz-transition: all .27s ease-in-out !important;
+    -ms-transition: all .27s ease-in-out !important;
+    -o-transition: all .27s ease-in-out !important;
+}
+
+.login-page .sign-container .sign-info,
+.login-page .sign-container .sign-form{
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
